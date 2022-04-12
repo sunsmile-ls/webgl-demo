@@ -1,0 +1,6 @@
+canvas {
+	background: url('/src/assets/images/sky.jpg');
+	background-size: cover;
+	background-position: right bottom;
+}
+
