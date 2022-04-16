@@ -1,12 +1,13 @@
-import { useState } from 'react';
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
-import ClearColor from './pages/demo1';
-import DrawPoint from './pages/demo2';
-import FlashingDots from './pages/demo3';
-import RenderAsync from './pages/demo4';
-import RenderPoly from './pages/demo5';
-import RenderConstellation from './pages/demo6';
-import './App.css';
+import { useState } from 'react'
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
+import ClearColor from './pages/demo1'
+import DrawPoint from './pages/demo2'
+import FlashingDots from './pages/demo3'
+import RenderAsync from './pages/demo4'
+import RenderPoly from './pages/demo5'
+import RenderConstellation from './pages/demo6'
+import RenderFace from './pages/demo7'
+import './App.css'
 
 function App() {
 	return (
@@ -32,6 +33,9 @@ function App() {
 						<li>
 							<Link to='renderConstellation'>6. 绘制星座</Link>
 						</li>
+						<li>
+							<Link to='renderFace'>7. 图形转面</Link>
+						</li>
 					</ul>
 				</section>
 				<main>
@@ -41,13 +45,13 @@ function App() {
 						<Route path='flashingDots' element={<FlashingDots />} />
 						<Route path='renderAsync' element={<RenderAsync />} />
 						<Route path='renderPoly' element={<RenderPoly />} />
-						<Route path='renderConstellation' element={<RenderConstellation />} />
+						<Route path='renderFace' element={<RenderFace />} />
 					</Routes>
 				</main>
 			</div>
 		</BrowserRouter>
-	);
+	)
 }
 
-export default App;
+export default App
 
